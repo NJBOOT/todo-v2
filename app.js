@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-nico:test123@cluster0-o3s1r.mongodb.net/todolistDB", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://admin-nico:adminpassword@cluster0-o3s1r.mongodb.net/todolistDB", { useNewUrlParser: true, useUnifiedTopology: true })
 
 const obj = require("./TodoModel")
 
